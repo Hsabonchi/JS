@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<body  class="p-3 mb-2 bg-warning text-dark">
+
+<p>
+<p>
+ <style type="text/css">
+ 
+ .dropdown-menu li >a{color:#cc66ff;} 
+
+ .CenterBig{ border: 10px solid  #99cc00;
+  
+    }
+ 	
+.fix{
+	position: relative;
+    top:400px;
+    left:35%;
+    }
+
+   .bigimg{
+   position: relative;
+    bottom: 70px;
+    left:40%;
+    }
+  #myAnimation {
+   width: 50px;
+   height: 50px;
+   position: absolute;
+   }
+
+   
+   #container{
+   color: #ffcc00 ;
+   background-color:#ffcc00;
+   }
+   
+
+
+ </style>
+
+
+
+
+  <div id ="imgGrp" class ="fix">
+
+ <a href=  "https://nodejs.org/en/">
+ <img src="13.jpg" id="img1" class ="imgstyle2" border="0" alt="nodejs Tutorial"  width="100" height="100">
+ </a>
+ <a href="https://jquery.com/">
+ <img src="14.jpg"   class ="imgstyle3" border="0" alt="jQuery Tutorial"  width="100" height="100">
+ <a href="https://www.javascript.com/learn/javascript/strings">
+ <img src="15.jpg"  class ="imgstyle4" border="0" alt="javascript Tutorial"  width="100" height="100">
+</p>
+</div>
+<!-- BiG PicTure-->
+  <div   class ="bigimg"  >
+    <figure   >
+      <img src="15.jpg"  id="Pic" class="CenterBig"  alt="Javascript Tutorial" width="250"  height="250" /> 
+      <figcaption id ="caption"></figcaption>
+    </figure>
+    </div>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">Javascript Tutorial</script>
+<script>
+  //
+$(function(){
+//var $bigImg = $("#bigPic1");
+//var  NewCapt
+  
+  $("#dropdown").mouseenter(function(){
+        $("#dropdown-menu").fadeIn("slow");
+        });
+
+     $("#dropdown").mouseleave(function(){
+        $("#dropdown-menu").fadeOut();
+        });
+ 
+  $("#dropdown1").mouseenter(function(){
+        $("#dropdown-menu1").fadeIn("slow");
+        });
+
+     $("#dropdown1").mouseleave(function(){
+        $("#dropdown-menu1").fadeOut();
+        });  
+
+
+$("img").mouseover(function(){
+  // get the source and link for img
+   var  Newsrc = $(this).attr("src"); 
+   var  Newhref  =$(this).attr("href");
+   var  NewCapt  =$(this).attr("alt");
+   //change the source and link of Central Pic
+
+   //By ID #---
+  $("#Pic").attr("src",Newsrc);
+  $("#Pic").attr("href",Newhref);
+  $("#caption").text(NewCapt);
+  $("#Pic").focus();
+    });  
+});
+
+
+</script>
+
+</body>
+
+</html>
