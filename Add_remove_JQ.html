@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+.btn
+{
+	margin-top:20em
+   
+}	
+
+li{
+
+	width: 5em; 
+	height: 3em; 
+	padding: 0.5em; 
+	border:3px solid darksalmon;
+	margin-top:3em; 
+
+
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+<body>
+<h1> What do you like to eat? </h1>
+
+
+<ol id="sortable">
+
+</ol>
+
+
+<p>
+<button id="btn1" class="btn">ADDList</button>
+<button id="btn2"class="btn">RemoveList</button>
+<button id="btn3"class="btn">insertbefore</button>
+<button id="btn4"class="btn">insertAftrt</button>
+</p>
+</p>
+<script type="text/javascript">
+
+
+
+$( function() {
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
+  } );
+	
+$(document).ready(function(){
+
+
+	
+
+    //$( "#sortable" ).disableSelection();
+	 var listFood=[];
+     var counter=0;
+
+    $("#btn1").click(function(){
+
+	     var item=prompt("What do you wanna add")
+	     //listFood.push(item);
+	     $("ol").append("<li>"+ item+"</li>");
+		 //$("ol li").eq(counter).attr("id",item);
+		  //counter++;
+
+
+	     /*for (var i = 0;listFood.length - 1; i++) {
+		      	if (item=== listFood[i]){
+		          alert("oops Dublicate Item")
+		        	}
+
+		        	else{
+				     $("ol").append("<li>"+ item+"</li>");
+				     $("ol li").eq(counter).attr("id",item);
+				     counter++;
+	 				}
+
+        }*/
+   
+    
+      
+     		
+
+    });
+    
+    $("ol ").on("dblclick","li",function(){
+    
+	     
+	     //var $id=$(this).atrr("id");
+	      $(this).remove();
+	       counter--;
+	   
+	    });
+
+
+    $("#btn2").click(function(){
+    //
+     var item=prompt("What do you wanna remove from the list?")
+     $("#"+item).remove();  
+       counter--;
+    //$("#"+item).
+    });
+    
+    $("#btn3").click(function(){
+     var item1=prompt("Insert Before the Item   (case sensitive)");
+     var item2=prompt("What do you wanna  Insert?");
+     listFood.push(item1);
+
+    $("#"+item1).before(`<li id=${item2} >`+ item2+"</li>") ; 
+     
+     counter++;  
+    });
+
+
+    $("#btn4").click(function(){
+     var item1=prompt("Insert After the Item      (case sensitive)");
+     var item2=prompt("What do you wanna  Insert?");  
+    $("#"+item1).after(`<li id=${item2} >`+ item2+"</li>") ;
+    
+      counter++;
+    });
+    
+    // Create Append First
+    
+    
+});
+
+
+
+</script>
+</body>
+</html>
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+
+<style>
+
+div
+{
+margin-top:0.5em;
+font-size:5em;
+margin-right:0.3em;
+display: inline-block; 
+}
+.board{
+
+width:80em;
+height:40em;
+
+
+}
+
+
+
+
+.rotate {
+  transform: rotate(-90deg);
+}
+
+</style>
+
+<script>
+
+var rotation = 0;
+	//$( "#sortable" ).disableSelection();
+
+
+$(document).ready(function(){
+    $( "div" ).draggable();
+
+
+
+    $("div").on("click",function(){
+     rotation -= 90;
+     //combine
+     var $id=$(this).attr("id")
+     $("div#"+$id).css({'transform' : 'rotate('+ rotation +'deg)'});      
+
+       });
+
+	
+    $("#hide").click(function(){
+        $("div").hide();
+        });
+  
+    
+    $("#show").click(function(){
+    	$("div").show();
+
+     });
+
+    $("#generate").click(function(){
+      
+	      $("div").each(function(index){
+	      	var random =randomFunc();
+	      	$("#"+index).html("&#x0001f0"+random);
+
+
+	       });
+   });
+
+	/* $("span").click( function(){
+	    var $id=$(this).attr("id");
+	     $("#"+$id).html("&#x0001f030")
+
+	   });*/
+
+
+
+	 	function randomFunc(){
+	  	//1 is the start number
+	   //6 is the number of possible results
+	   var result=Math.floor(Math.random() * 31) + 61 ;
+	   return result
+      }; 
+});
+
+  
+
+  
+
+
+
+</script>
+</head>
+<body >
+
+<p>
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<button id="generate">Generate</button>
+</p>
+
+
+
+<!-- Span Tag dose not work here --> 
+	<!--div id="sortable" ></div--> 
+<div id="0"> &#x1F063;</div> <div id="1">&#x1F064;</div> <div id="2"> &#x1F06B; </div>
+<div id="3"> &#x1F071;</div> <div id="4">&#x1F072; </div><div id="5">&#x1F073;</div>
+<div id="6">&#x1F078;</div> <div id="7">&#x1F079;</div> <div id="8">&#x1F07A;</div><div id="9">&#x1F07B;</div>
+
+<div id="10">&#x1F07F;</div> <div id="11">&#x1F080;</div><div id="12">&#x1F081;</div><div id="13">&#x1F082;</div> <div id="14">&#x1F083;</div>
+
+
+<div id="15">&#x1F086;</div> <div id="16">&#x1F087;</div><div id="17">&#x1F087;</div><div id="18">&#x1F088;</div> <div id="19">&#x1F089;</div>
+<div id="20">&#x1F08A;</div>
+
+<div id="21">&#x1F08D;</div> <div id="22">&#x1F08E;</div><div id="23">&#x1F08F;</div><div id="24">&#x1F090;</div> <div id="25">&#x1F091;</div>
+<div id="26">&#x1F092;</div><div id="27">&#x1F093;</div>
+
+
+<!--div class="s"></div-->
+
+
+
+</body>
+</html>

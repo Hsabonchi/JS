@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+
+</head>
+<body>
+
+
+        <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" ariaspopup="true" aria-expanded="false">Projects</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://hasanain87.github.io/javascript-JQuery/JQ.html">jQuery</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                
+              </ul>
+              
+              <br>
+              <br>
+
+
+
+
+
+
+<div class="alert alert-success container" role="alert">
+        <h4 class="alert-heading">Hello </h4>
+        <p class="col-sm-11  text-center  alert alert-success" id="info"></p>
+        <div class="col-sm-1"><button type="button"  id="btn" class="btn btn-dark">show</button></div>
+        <hr>
+        <div class="col-sm-11 mb-0 text-center"  id="demo"></div>
+        <div class="col-sm-1"><button type="button"  id="btn1" class="btn btn-dark" onclick="loadDoc()">show</button></div>
+       
+      </div>
+
+
+
+
+
+
+
+
+    <div class="card">
+
+        <h5 class="card-header col-sm-11">Education</h5>
+
+            <div class="card-body col-sm-11">
+
+                <h5  class="card-title col-sm-11 text-center" id="ed1"></h5>
+                <p class="card-text text-center text-center" id="ed2"></p>
+                <br>                                                                                          
+                <h5 class="card-text text-center" id="ed3"></h5>
+                <p class="card-text text-center" id="ed4"> </p>
+                <br>   
+                <h5 class="card-text text-center" id="ed5"></h5>
+                <p class="card-text text-center" id="ed6"> </p>
+
+                <div class="card-footer text-muted">
+                       "Education is the  bes"
+                      </div>
+            </div>
+        </h5>
+<br>
+
+
+       <div>
+          <button type="button"  id="ed" class="btn btn-dark"  onclick="loadedu()">show</button>
+        </div>
+<br>
+
+      </div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <script>
+
+
+var btn=document.getElementById("btn")
+var text= document.getElementById("info")
+
+//Read data from a web server - after the page has loaded
+//Update a web page without reloading the page
+//AJAX just uses a combination of: A browser built-in XMLHttpRequest object (to request data from a web server)
+//JavaScript and HTML DOM (to display or use the data)
+//The keystone of AJAX is the XMLHttpRequest object,The XMLHttpRequest object can be used to exchange data with a web server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.
+
+//Create an XMLHttpRequest Object
+
+
+
+          //The XMLHttpRequest object can be used to request data from a web server
+    var xhttp = new XMLHttpRequest();
+    //To send a request to a server, we use the open() and send() methods of the XMLHttpRequest object:
+    xhttp.open("GET", "https://hasanain87.github.io/javascript-JQuery/info.json", true);
+    var data
+    xhttp.onload=function(){
+        //Returns the response data as a string
+    data=JSON.parse(xhttp.responseText)
+  
+   };
+    xhttp.send();
+  
+
+
+btn.addEventListener("click",function(){
+    renderHTML(data)
+
+    function renderHTML(data){
+        var htmString=""
+        htmString+="<h2>"+data[0].name +"  "+"</h2>"
+        document.getElementById("info").innerHTML = htmString;
+       
+    }
+})
+
+function loadDoc() {
+  
+   
+  document.getElementById("demo").innerHTML = data[0].email
+}
+
+
+function loadedu(){
+    
+    
+    document.getElementById("ed1").innerHTML =data[0].educatiion[0]
+    document.getElementById("ed2").innerHTML =data[0].educatiion[1]
+    document.getElementById("ed3").innerHTML =data[0].educatiion[2]
+    document.getElementById("ed4").innerHTML =data[0].educatiion[3]
+    document.getElementById("ed5").innerHTML =data[0].educatiion[4]
+    document.getElementById("ed6").innerHTML =data[0].educatiion[5]
+
+
+}
+
+
+    </script>
+
+
+
+</body>
+</html>

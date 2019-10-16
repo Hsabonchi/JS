@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style type="text/css">
+.li
+{
+	 color:coral;
+	 font-size: 2em;
+
+ }
+</style>
+</head>
+<body >
+
+	<p>  </p>
+<ol id="ol" >
+
+
+</ol>
+
+<button onclick="CreateElement()"> Insert Element </button>
+<button onclick="RemoveElement()"> RemoveElement </button>
+<button id="btn3">  StyleElement </button>
+</body>
+<script>
+
+function init(){
+	
+	var  elem1=document.getElementById("btn3")
+	elem1.addEventListener("click",StyleElement)
+	elem1.addEventListener("mouseleave",StyleElement)
+
+}
+
+
+
+var index=1
+function CreateElement(){
+
+		var elem=document.getElementById("ol");
+		var NewElem=document.createElement("li");
+		 var UsTxt=prompt("Enter Somthing")
+		  if((UsTxt=== null)) {
+          alert("You have not enter anything")
+
+		  }
+		  if((UsTxt=== '')) {
+          alert("You have not enter anything")
+
+		  }
+        else if(UsTxt!==''&& UsTxt!==null){
+
+				var text=document.createTextNode(UsTxt);
+				// add id attribute to the new element
+				NewElem.setAttribute("id",index)
+				NewElem.appendChild(text);
+				elem.appendChild(NewElem);
+				index++;
+
+                    
+
+}      
+}
+
+
+function RemoveElement()
+{
+// refrence to the Parent
+	var parent=document.getElementById("ol")
+	var userInput=prompt("Which item you wanna remove?")
+	var QueryElem=document.getElementById(userInput)
+	parent.removeChild(QueryElem)
+	index--
+
+
+
+}
+function  StyleElement(){
+
+var elem=document.getElementsByTagName("ol")[0]
+elem.className="li"
+
+
+}
+
+
+window.addEventListener("load",init);
+
+</script>
+</html>
