@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    	<link rel="stylesheet" type="text/css" href="CSS.css">
+    </head>
+    <body onload=" music(); ">
+        <!-- <body onload=" start(); music(); "> -->
+        <h1><center>Smiley Slot</center></h1>
+
+        <table  class="center" border="5">
+
+            <tr>
+                <td> <img id="Image1" src="4.png" width="100" height="100">  </td>
+                <td> <img id="Image2" src="7.png" width="100" height="100"> </td>
+                <td> <img id="Image3" src="2.png" width="100" height="100">  </td>
+            </tr>
+            	
+            <tr>
+                <td> <img id="Image4" src="4.png" width="100" height="100"> </td>
+                <td> <img id="Image5" src="9.png" width="100" height="100"> </td>
+                <td> <img id="Image6" src="8.png" width="100" height="100"> </td>
+            </tr>
+
+
+            <tr>
+                <td> <img id="Image7" src="1.png" width="100" height="100">     </td>
+                <td> <img id="Image8" src="3.png" width="100" height="100">     </td>
+                <td> <img id="Image9" src="6.png" width="100" height="100"></td>
+            </tr>
+        </table>
+
+        <div class="div">
+            <input type="button" id="button1"  class="button"  name="startitup"  value="Start/Stop" onclick="play ()">
+            <input type="button" id="button2" name="hbutton" value="Help" onclick="help ()">
+            <!--<input type="button" id="button" name="cbutton" value="Check" onclick="stop ()">
+            <input type="button" id="button" name="sbutton" value="Click me to count your wins!" onclick="clickCounter()">-->
+        </div>
+
+        <script>
+          var mySound;
+        //var speed = 30000;
+
+        // the initail value is False
+        var isRunning = true;
+
+        // $(document).ready(function(){
+        //    $("#button1").click(function(){
+
+        //     play();
+        //     }); 
+        // });
+        // Store a variable
+        //var GameScore = 0;
+        //localStorage.setItem("Score", someVariable);
+
+        // Retrieve a variable
+        //var storedVariable = localStorage.getItem("Score"); 
+        // this sets the value of 0 to storedVariable
+
+        function myFunction1() {
+            var x = Math.floor((Math.random() * 14) + 1);
+            var y = x.toString();
+
+            document.getElementById("Image1").src = y+".png";
+            //setTimeout("", speed);
+            myFunction2();
+        }
+
+        function myFunction2() {
+            var x = Math.floor((Math.random() * 14) + 1);
+            var y = x.toString();
+
+            document.getElementById("Image2").src = y+".png";
+            setTimeout("myFunction3()", speed);
+        }
+
+        function myFunction3() {
+            var x = Math.floor((Math.random() * 14) + 1);
+            var y = x.toString();
+
+            document.getElementById("Image3").src = y+".png";
+            setTimeout("myFunction4()", speed);
+        }
+
+        function myFunction4() {
+            var x = Math.floor((Math.random() * 14) + 1);
+            var y = x.toString();
+
+            document.getElementById("Image4").src = y+".png";
+            setTimeout("myFunction5()", speed);
+        }
+
+        function myFunction5() {
+            var x = Math.floor((Math.random() * 14) + 1);
+            var y = x.toString();
+
+            document.getElementById("Image5").src = y+".png";
+            setTimeout("myFunction6()", speed);
+        }
+
+        function myFunction6() {
+            var x = Math.floor((Math.random() * 14) + 1);
+            var y = x.toString();
+
+            document.getElementById("Image6").src = y+".png";
+            setTimeout("myFunction7()", speed);
+        }
+
+        function myFunction7() {	
+            var x = Math.floor((Math.random() * 14) + 1);
+            var y = x.toString();
+
+            document.getElementById("Image7").src = y+".png";
+            setTimeout("myFunction8()", speed);
+        }
+
+        function myFunction8() {
+            var x = Math.floor((Math.random() * 14) + 1);
+            var y = x.toString();
+
+            document.getElementById("Image8").src = y+".png";
+            setTimeout("myFunction9()", speed);
+        }
+
+        function myFunction9() {	
+            var x = Math.floor((Math.random() * 14) + 1);
+            var y = x.toString();
+
+            document.getElementById("Image9").src = y+".png";
+            setTimeout("myFunction1()",speed);
+        }
+
+        function stop() {
+            isRunning=false;
+        	speed = 9999999999;
+
+        	// Remove this statement dosent affect anything
+            var image1Src = document.getElementById("Image1").src;
+            var image2Src = document.getElementById("Image2").src;
+            var image3Src = document.getElementById("Image3").src;
+            var image4Src = document.getElementById("Image4").src;
+            var image5Src = document.getElementById("Image5").src;
+            var image6Src = document.getElementById("Image6").src;
+            var image7Src = document.getElementById("Image7").src;
+            var image8Src = document.getElementById("Image8").src;
+            var image9Src = document.getElementById("Image9").src;
+
+         if (image1Src == image2Src && image2Src == image3Src||image4Src==image5Src&&image5Src==image6Src || image7Src==image8Src&&image8Src==image9Src) {
+                alert("Congratulations! You have won!");   
+                  mySound = new sound("jump.wav");
+            mySound.play();
+            }
+
+        if (image1Src == image4Src && image4Src == image7Src||image2Src==image5Src&&image5Src==image8Src || image3Src==image6Src&&image6Src==image9Src) {
+                alert("Congratulations! You have won!");   
+                  mySound = new sound("jump.wav");
+            mySound.play();
+            }
+
+        if (image1Src == image5Src && image5Src == image9Src||image3Src==image5Src&&image5Src==image7Src || image7Src==image5Src&&image5Src==image3Src) {
+                alert("Congratulations! You have won!");
+                mySound.stop();   
+                  mySound = new sound("jump.wav");
+            mySound.play();
+            }
+        }
+
+        function start() {
+            isRunning=true;
+            
+        	speed = 50;
+              //Intiate Img
+        	document.getElementById("Image1").src = "11.png";
+        	document.getElementById("Image2").src = "11.png";
+        	document.getElementById("Image3").src = "12.png";
+        	document.getElementById("Image4").src = "11.png";
+        	document.getElementById("Image5").src = "12.png";
+        	document.getElementById("Image6").src = "11.png";
+        	document.getElementById("Image7").src = "12.png";
+        	document.getElementById("Image8").src = "11.png";
+        	document.getElementById("Image9").src = "11.png";
+
+        	//setTimeout("myFunction1()", speed);
+            setInterval(myFunction1(),speed);
+            setTimeout("myFunction2()", speed);
+            setTimeout("myFunction3()", speed);
+            setTimeout("myFunction4()", speed);
+            setTimeout("myFunction5()", speed);
+            setTimeout("myFunction6()", speed);
+            setTimeout("myFunction7()", speed);
+            setTimeout("myFunction8()", speed);
+            setTimeout("myFunction9()", speed);
+        }
+
+        function play() {
+            if (isRunning==true) {
+                stop();
+            }
+            else {
+                start();
+            }
+        }
+
+        function help() {
+            alert("Hello and welcome to our game! It is similar to a slot machine; match rows, columns, or diagonals to win! Click on the Start/Stop button to start and stop the game. Good luck!");
+        }
+
+        function sound(src) {
+            // Create Audio element
+            this.sound = document.createElement("audio");
+            this.sound.src = src;
+            this.sound.setAttribute("preload", "auto");
+            this.sound.setAttribute("controls", "none");
+            // Hide the Audio bar
+            this.sound.style.display = "none";
+
+            document.body.appendChild(this.sound);
+            this.play = function() {
+                this.sound.play();
+            }
+            this.stop = function() {
+                this.sound.pause();
+            }    
+        }
+          // Sound Function 
+        function music() {
+            mySound = new sound("Candy.mp3");
+            mySound.play();
+              
+        }
+
+        //function clickCounter() {
+        //if(typeof(Storage) !== "undefined") {
+            //if (localStorage.clickcount) {
+                //localStorage.clickcount = Number(localStorage.clickcount)+1;
+            //} else {
+                //localStorage.clickcount = 1;
+            //}
+            //document.getElementById("result").innerHTML = "You have won the game " + localStorage.clickcount + " time(s).";
+            //} else {
+                //document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage.";
+            //}
+        //}
+        </script>
+    </body>
+</html>
