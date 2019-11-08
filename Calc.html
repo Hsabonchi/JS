@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+        #answer{
+
+         background-color: silver;
+         width: 30em;
+         height: 3em;
+
+        }
+        form{
+
+            padding:4% ;
+            margin: 2%;
+        }
+
+        </style>
+    </head>
+    <body onload="init()">
+        <div id='calc-contain'>
+  
+          <form name="calculator" onSubmit="return false" >
+            
+            <div  id="answer" name="answer"> </div>
+            <br>
+            
+            <button   class="btn" value="1">1</button>
+            <button    class="btn" value="2"  >2</button>
+            <button   class="btn" value="3" >3</button>
+            <button   class="oprt" value="+" >+</button>
+            <br/>
+            
+            <button class="btn" value="4">4</button>
+            <button class="btn" value="5">5</button>
+            <button class="btn" value="6">6</button>
+            <button  class="oprt" value="-"> /</button>
+            </br>
+          
+            <button class="btn" value="7">7 </button>
+            <button class="btn" value="8">8</button>
+            <button class="btn" value="9">9</button>
+            <button  class="oprt" value="x">*</button>
+            </br>
+        
+            <button value=" c " onclick="calculator.answer.value = ''">c</button>
+            <button class="btn" value=" 0 " >0</button>
+            <button value=" = " onclick="calculate()">= </button>
+            <button value=" / " onclick="calculator.answer.value += '/'"> /</button>
+            </br>
+  
+    
+          </form>
+          <div id="agh">
+            <p>
+          </div>
+        </div>
+
+<script>
+    // main var stores first operand  (before + sign)
+    var num=""
+    var num1
+    var num2
+    var operator
+
+function init() {
+    var elmList=document.getElementsByClassName("btn")
+    for(var i=0;i<elmList.length;i++){
+        elmList[i].addEventListener("click",clickedEle);	
+    }
+
+    var elmList=document.getElementsByClassName("oprt")
+    for(var i=0;i<elmList.length;i++){
+        elmList[i].addEventListener("click",operatorClicked);	
+    }
+
+
+
+	}	
+
+
+    function clickedEle() {
+
+                num=num+event.target.value 
+                var elem=document.getElementById('answer')
+                elem.innerText=num
+               
+            }
+
+    function operatorClicked(){
+           
+            operator= event.target.value 
+            var elem=document.getElementById('answer')     
+            num=num+event.target.value 
+            elem.innerText=num
+
+    }
+
+
+function calculate(){
+    var list=(num).split("+")
+    if(operator==='+'){
+        var result =Number(list[0])+ Number(list[1])
+        alert(result)
+
+                
+            } 
+
+
+}
+
+      
+</script>
+
+
+
+    </body>
+</html>
