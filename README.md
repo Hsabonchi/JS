@@ -2,10 +2,21 @@
 
  <pre>
     ▶ JavaScript is a`Dynamically typed languages`means you do not have to specify types every time.
-      Dynamically-typed languages perform type checking at runtime,determines its variables' data types based on their values 
-      e.g a=1.In Javascript,we do'nt use <strike>int a=1 </strike>
+      Dynamically-typed languages perform type checking at runtime,determines its variables' data types based 
+      on their values e.g a=1.In Javascript,we do'nt use <strike>int a=1 </strike>
       
     ▶ JavaScript is one of the core technologies of the World Wide Web.
+    
+     <strong> Basic types </strong>
+     
+     
+     Six Data Types that are primitives, checked by typeof operator:
+      ▶ undefined : typeof instance === "undefined"
+      ▶ Boolean : typeof instance === "boolean"
+         ▶  Boolean: logical values, that is, either True of False. 0 or 1.
+         
+      ▶ Number : typeof instance === "number"
+      ▶ String : typeof instance === "string"
 
 
  </pre>
