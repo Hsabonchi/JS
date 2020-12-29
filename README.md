@@ -1,4 +1,10 @@
 # JavaScript
+<pre>
+     `Programming is like riding a bicycle: it
+     looks easy when someone else is doing it, may seem
+     impossible when you first try to do it yourself, but becomes simple and natural with practice.
+  – From ”Programming in Haskell”`
+</pre>
 
  <pre>
     ▶ JavaScript is a`Dynamically typed languages`means you do not have to specify types every time.
@@ -24,8 +30,10 @@
          
       ▶ Number : typeof instance === "number"
       ▶ String : typeof instance === "string"
-      
-      
+        ▶ a sequence of characters e.g 'javascript'
+        ▶ Written in double quotes: "hello".
+        ▶ Written in single quotes: 'hello'.
+        
       
      Iteration = repeating a process a number of times
 
