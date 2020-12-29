@@ -13,10 +13,21 @@
      Six Data Types that are primitives, checked by typeof operator:
       ▶ undefined : typeof instance === "undefined"
       ▶ Boolean : typeof instance === "boolean"
-         ▶  Boolean: logical values, that is, either True of False. 0 or 1.
+         ▶ Boolean: logical values, that is, either True of False. 0 or 1.
+         ▶ Usual operations like && (and), || (or) and not return a boolean value.
+         ▶ Result of comparisons with ==, /=, <  also return a boolean value. 
+         E.g
+         > 1 == 2 || 3 == 4
+         False
+         > 1 < 2 && 3 < 4
+         True
          
       ▶ Number : typeof instance === "number"
       ▶ String : typeof instance === "string"
+      
+      
+      
+     Iteration = repeating a process a number of times
 
 
  </pre>
