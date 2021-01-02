@@ -1,6 +1,6 @@
 #### What is a variable?
 
-- A variable is a named reference to a value.value can be accessed through a predetermined name. -- MDN 
+- A variable is a named reference to a value.value can be accessed through a predetermined name. 
 - A variable is a memory location. It has a name that is associated with that location. The memory location is used to hold data.
 - A Variable is a standard part of any programming language.
 - Values can generally be accessed or changed at any time.
