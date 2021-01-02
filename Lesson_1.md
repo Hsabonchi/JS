@@ -18,3 +18,5 @@
       > var x;
       > x
       undefined
+      
+ ###### Read about [JavaScript Naming Conventions](https://www.robinwieruch.de/javascript-naming-conventions)
