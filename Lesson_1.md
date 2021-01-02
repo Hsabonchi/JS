@@ -4,6 +4,7 @@
 - A variable is a memory location. It has a name that is associated with that location. The memory location is used to hold data.
 - Variables are a standard part of any programming language.
 - Values can generally be accessed or changed at any time.
+- Every variable has a type: number,boolean etc
 
 #### Declaring a Variable
      In JavaScript, you declare a variable via a var statement before you use it
