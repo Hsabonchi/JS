@@ -1,5 +1,5 @@
 What is a type?
-     A type is  a name for a collection of related values.
+  -   A type is  a name for a collection of related values.
      
 
  Basic Types 
