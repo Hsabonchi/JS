@@ -6,6 +6,11 @@
 - Values can generally be accessed or changed at any time.
 - Every variable has a type: number,boolean etc
 
+  `A variable is something that stores data inside it
+   A variable name by convention starts with lowercase.
+  `
+  
+
 #### Declaring a Variable
      In JavaScript, you declare a variable via a var statement before you use it
       e.g   var myName= 'Hasan' 
@@ -18,3 +23,8 @@
       > var x;
       > x
       undefined
+
+### remmeber whenever we get somthing from prompt or .innerHTML or ... it always come in as a string 
+#####  "36" is a string not a number -- try check it with typeof function to convice yourself
+ 
+ 
