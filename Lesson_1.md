@@ -4,19 +4,22 @@
 - A variable is a memory location. It has a name that is associated with that location. The memory location is used to hold data.
 - A Variable is a standard part of any programming language.
 - Values can generally be accessed or changed at any time.
-- Every variable has a type: number,boolean etc
+- Every variable has a type: number,boolean etc.
 
-  `A variable is something that stores data inside it
-   A variable name by convention starts with lowercase.
-  `
+- To sum up
+    - A variable is something that stores data inside it
+    - A variable name by convention starts with lowercase.
+  
   
 
 #### Declaring a Variable
-     In JavaScript, you declare a variable via a var statement before you use it
+     In JavaScript, to declare a variable use var keyword followed by variableName = then value e.g 1000 ,'HS' ..etc
+     
       e.g   var myName= 'Hasan' 
       
-    `myName` is a varibale name and could be any name but it should makes senses what you are doing.
-    '=' for intialize a variable with a data.
+    `myName` is a varibale name and could be any anything but it should makes senses what you are doing.
+    '=' to intialize a variable with a data.
+    'Hasan' is the value .
 
      The value of an uninitialized variable is undefined:
 
