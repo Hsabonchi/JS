@@ -15,6 +15,13 @@
     
      <strong> Basic types </strong>
      
+     Expressions are computations 
+         – 2 + 3 is a computation.
+     Values(a subset of the expressions) are the results of computations
+          – 5 is a value
+      Types describe collections of values and the computations that generate those values
+          –int is a type
+     
      
      Six Data Types that are primitives, checked by typeof operator:
       ▶ undefined : typeof instance === "undefined"
