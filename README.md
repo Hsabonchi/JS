@@ -1,10 +1,12 @@
-# JavaScript
+### JavaScript
+
 <pre>
      `Programming is like riding a bicycle: it
      looks easy when someone else is doing it, may seem
      impossible when you first try to do it yourself, but becomes simple and natural with practice.
   – From ”Programming in Haskell”`
 </pre>
+
 
  <pre>
     ▶ JavaScript is a`Dynamically typed languages`means you do not have to specify types every time.
@@ -13,36 +15,41 @@
       
     ▶ JavaScript is one of the core technologies of the World Wide Web.
     
+    
      <strong> Basic types </strong>
      
      Expressions are computations 
          – 2 + 3 is a computation.
+         
      Values(a subset of the expressions) are the results of computations
           – 5 is a value
+          
       Types describe collections of values and the computations that generate those values
           –int is a type
      
+     <h4> Six Data Types that are primitives, checked by typeof operator: </h4>
      
-     Six Data Types that are primitives, checked by typeof operator:
-      ▶ undefined : typeof instance === "undefined"
-      ▶ Boolean : typeof instance === "boolean"
+      ▶ undefined : 
+      
+      ▶ Boolean : 
          ▶ Boolean: logical values, that is, either True of False. 0 or 1.
          ▶ Usual operations like && (and), || (or) and not return a boolean value.
-         ▶ Result of comparisons with ==, /=, <  also return a boolean value. 
-         E.g
-         > 1 == 2 || 3 == 4
-         False
-         > 1 < 2 && 3 < 4
-         True
+         ▶ Result of comparisons with ==, /=, < and >  also return a boolean value. 
          
-      ▶ Number : typeof instance === "number"
-      ▶ String : typeof instance === "string"
+         E.g
+         > 1 == 2 || 3 == 4 return False .
+         
+         > 1 < 2 && 3 < 4   return True.
+         
+      ▶ Number : typeof 3 === "number"
+      
+      ▶ String : typeof "JavaScript" === "string"
+          
         ▶ a sequence of characters e.g 'javascript'
-        ▶ Written in double quotes: "hello".
-        ▶ Written in single quotes: 'hello'.
+        ▶ Can be written in double quotes: "hello" OR in single quotes: 'hello'.
         
       
-     Iteration = repeating a process a number of times
+         Iteration = repeating a process a number of times.
 
 
  </pre>
