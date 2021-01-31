@@ -1,4 +1,4 @@
-#### A variable
+#### 
 
 
             What is the single most important mathematical
