@@ -24,6 +24,9 @@
     var hasan=10 // now the value is 10 instead of 7
     
     
+   *** you can rename hasan to zzz by replacing the definition and all its uses with the new name.
+    
+    
     
             
             
