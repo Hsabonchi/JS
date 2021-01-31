@@ -6,3 +6,20 @@
 
             An answer: The mathematical variable
             
+            
+ #### Declarations have the form
+         
+    var <variableName> = <expression>
+    
+    <expression> can be:
+    
+    2 ,  2+3  , 2 > 3
+
+   Example:
+    
+    var hasan=7  // It bounds the variable name hasan (variable name could be anything) to a value (3).
+    
+    
+    
+            
+            
