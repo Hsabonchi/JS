@@ -13,3 +13,21 @@
     clearly labelled functions will also make them easier to read
     and comprehend. Functions can be thought of as building blocks for a program. 
 </p>
+
+####  Defining functions
+  Important Notes : define a function before use it.
+  
+  <pre>
+  
+  A function definition (also called a function declaration, or function statement) consists of the 
+  
+  - `function keyword`, followed by: The name of the function.
+  
+  - A list of parameters (optional )to the function, enclosed in parentheses and separated by commas.
+  
+  -  The JavaScript statements that define the function, enclosed in curly brackets, {...}.
+  
+  - `return keyword` specifies the value returned by the function (optional) and should be defiene in {......}  .
+  
+  
+ </pre>
