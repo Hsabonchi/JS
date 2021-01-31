@@ -29,6 +29,9 @@
      
      <h4> Six Data Types that are primitives, checked by typeof operator: </h4>
      
+     What is a type?
+      -   A type is a name for a collection of related values (same kind).
+     
       ▶ undefined : 
       
       ▶ Boolean : 
