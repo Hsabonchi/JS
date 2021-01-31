@@ -23,12 +23,12 @@
     
     var hasan=10 // now the value is 10 instead of 7
     
-    
+   <pre> 
    *** you can rename hasan to zzz by replacing the definition and all its uses with the new name.
    *** a variable has a scope;
    *** By convention to captialize the second part of the variable name. e.g  var myLastname="xxxxx"
    
-    
+   </pre>  
     
     
             
