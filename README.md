@@ -60,5 +60,5 @@
 
 Resouces_Name  |Link
 --- |---
-[what is a variable]()
+[What is a variable]()
 
