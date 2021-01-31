@@ -33,6 +33,7 @@
       -   A type is a name for a collection of related values (same kind).
      
       ▶ undefined : 
+              The value of an uninitialized variable is undefined
       
       ▶ Boolean : 
          ▶ Boolean: logical values, that is, either True of False. 0 or 1.
