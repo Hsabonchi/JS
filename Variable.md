@@ -19,6 +19,10 @@
     
     var hasan=7  // It bounds the variable name hasan (variable name could be anything) to a value (3).
     
+    a variable can be modified or changed later.
+    
+    var hasan=10 // now the value is 10 instead of 7
+    
     
     
             
