@@ -31,6 +31,12 @@
      
      What is a type?
       -   A type is a name for a collection of related values (same kind).
+      -   Every value has a type .
+      
+      But types are a great thing: 
+          – help us think about how to construct our programs.
+          – help us find stupid programming errors.
+          – help us track down errors quickly when we edit our code.  credit to Cos Princeton Universiity
      
       ▶ undefined : 
               The value of an uninitialized variable is undefined.
