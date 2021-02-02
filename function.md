@@ -30,4 +30,22 @@
   - `return keyword` specifies the value returned by the function (optional) and should be defiene in {......}  .
   
   
+   3 + 4 is 7
+   2 + 5  is also 7
+   
+   How about creating a function called add 
+      - add function accepts/takes two variables as arquments 
+      -  return the result
+      
+      function add (x,y){
+      
+            return x+y
+        }
+        
+     // In order to use/try/test the add function
+        
+       add (3,4)  ---> return 7  
+   
+  
+  
  </pre>
