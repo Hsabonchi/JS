@@ -21,7 +21,12 @@
     
     a variable can be modified or changed later.
     
-    var hasan=10 // now the value is 10 instead of 7
+    var hasan=10 // now the value is 10 instead of 7.
+    
+    var x = 3+4   // first evalutes the expression (3+4) then bind it to x .
+    
+    
+    
     
    <pre> 
    *** you can rename hasan to zzz by replacing the definition and all its uses with the new name.
