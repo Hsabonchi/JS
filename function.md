@@ -34,8 +34,9 @@
    2 + 5  is also 7
    
    How about creating a function called add 
-      - add function accepts/takes two variables as arquments 
-      -  return the result
+      - add function accepts/takes two variables x and y as arquments 
+      - return the result of addind x + y.
+      - 
       
       function add (x,y){
       
