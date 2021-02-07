@@ -8,7 +8,14 @@
       following are illegal:
     
        "2"-"1"
+   
 
+
+
+
+• Write a function that takes in a name as a argument and return the Hello {name}.
+
+  e.g  WellcomeFunc("JavaSCript") ----> "Hello JavaSCript"
 
 
 
