@@ -6,7 +6,21 @@
      impossible when you first try to do it yourself, but becomes simple and natural with practice.
   – From ”Programming in Haskell”`
 </pre>
-
+ 
+ <pre>
+   What is a program?
+    A program is a sequence of instructions that specifies how to perform a computation. The computation might be 
+    something mathematical,  such as solving a system of equations or finding the roots of a polynomial, but it can also be 
+    a symbolic computation, such as searching and replacing text in a document or (strangely enough) compiling a program.
+    
+     The details look different in different languages, but a few basic instructions appear in just about
+     every language:
+     
+     input: Get data from the keyboard, a file, or some other device.
+     output: Display data on the screen or send data to a file or other device.
+     math: Perform basic mathematical operations like addition and multiplication.
+ 
+ </pre>
 
  <pre>
     ▶ JavaScript is a`Dynamically typed languages`means you do not have to specify types every time.
