@@ -32,6 +32,7 @@
    *** you can rename hasan to zzz by replacing the definition and all its uses with the new name.
    *** a variable has a scope;
    *** By convention to captialize the second part of the variable name. e.g  var myLastname="xxxxx"
+   *** Every variable binding has a scope, which is the portion of the code that can refer to that binding.
    
    </pre>  
     
