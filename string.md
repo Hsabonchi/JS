@@ -17,6 +17,8 @@
 
   e.g  WellcomeFunc("JavaSCript") ----> "Hello JavaSCript"
 
+• write a function that takes a String, and returns whether or not that String is more than 10 characters long. 
+ e.g "hello" --> false;
 
 
 </pre>
