@@ -58,7 +58,13 @@
      // In order to use/try/test the add function
         
        add (3,4)  ---> return 7  
-   
-  
   
  </pre>
+ 
+ - Write a function to return the boolean AND/OR of two bool value,
+    -  Function takes two boolean values and one value as a reuslt of x AND y 
+    -  function andBool(x,y)  ---> return true or false.
+    -  function orBool(x,y)   ---> return true or false.
+    -  check the actual operator for AND.
+    -  
+    - function call ,e.g andBool(true,true), orBool (true,true)
