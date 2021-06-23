@@ -82,4 +82,6 @@
 Resouces_Name  |Link
 --- |---
 [What is a variable]()
+[JavaScript Style Guide()](https://github.com/airbnb/javascript#naming-conventions)
+
 
