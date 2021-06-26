@@ -1,6 +1,22 @@
-<p> Conditional statement is common across many programming languages. Although the syntax varies from language to language, the basic structure (in pseudocode form) looks like this:</p>
+<p> 
+    
+ Conditional statement is common across many programming languages. Although the syntax varies from language to language, the basic structure (in pseudocode form) looks like this:</p>
+ 
+
 
 <pre>
+    Conditions Type:
+    
+     If statement: is used to specify a block of code to be executed, if a specified condition is true.
+     If - else statement: is used to specify a new condition to test, if the first condition is false then it will be redirected to the else part.
+     Logical conditions: Are features of programming languages "conditional statement", we will list them below:-
+         Less than: a < b
+         Less than or equal to: a <= b
+         Greater than: a > b
+         Greater than or equal to: a >= b
+         Equal to a == b
+         Not Equal to: a != b
+
 
     If (boolean condition) Then
         (consequent)
