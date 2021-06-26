@@ -5,7 +5,13 @@
             concept ever developed in human history?  -- Credit to COS 326 Princeton University
 
             An answer: The mathematical variable
-            
+
+
+##### From computer scientis perspective.
+
+            Variable A variable is a name given to the memory cell or cells that can hold the representation of
+            a value of a specific type. The value may be changed during the execution of the program.
+
             
  #### Declarations have the form
          
