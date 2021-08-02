@@ -41,6 +41,20 @@
    *** Every variable binding has a scope, which is the portion of the code that can refer to that binding.
    
    </pre>  
+   
+   <pre>
+     var x=1
+     var  y
+    
+     y=x
+   
+     what x=y means?
+     Can be read from right side of the equal sign to left. 
+     set the value of x to be equal to the value of y
+     
+     Please note that '==' double equal sign is differnt than '=' single.
+     
+   </pre>
     
     
             
