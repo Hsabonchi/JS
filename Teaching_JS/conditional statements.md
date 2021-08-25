@@ -16,17 +16,28 @@
      If statement: is used to specify a block of code to be executed, if a specified condition is true.
      If - else statement: is used to specify a new condition to test, if the first condition is false then it will be redirected to the else part.
      
+     <hr>
      
      Logical conditions: Are features of programming languages "conditional statement", we will list them below:-
      
+        Review Logical Condition:
+        =========================
+        
          Less than: a < b
          Less than or equal to: a <= b
          Greater than: a > b
          Greater than or equal to: a >= b
          Equal to a == b
          Not Equal to: a != b
+         
+        Notes:  boolean condition returns a true or false value
+           if true then do .....
+           if (boolean condition) is not true ,then check  ...
+           it starts from the top looking for expressions that evaluate to true.
+           
+==================================================================================
 
-
+    
     If (boolean condition) Then
         (consequent)
     Else
@@ -34,7 +45,10 @@
     End If
     
     - JavaScript
+ ================================================   
     
+    Ex1:
+    ===
     
     if (password ==== "******") {
       console.log("Wellcome to .....!");
@@ -42,12 +56,11 @@
       console.log("WRONG Password!");
     }
     
-   Notes:  boolean condition returns a true or false value
-           if true then do .....
-           if (boolean condition) is not true ,then check  ...
-           it starts from the top looking for expressions that evaluate to true.
-           
-       
+============================================
+     
+     Ex2:
+     ====
+     
        a=1
        b=9
        
@@ -61,7 +74,6 @@
          - if the condition(9 > 1) is true then 
          - without looking and else{.....} 
            
-           
-           
+         
   </pre>
   
