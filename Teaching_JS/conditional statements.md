@@ -5,11 +5,20 @@
 
 
 <pre>
+
+   Conditional statements are the way computers can make decisions. Conditional statements always have an if part, which tells 
+   the app or program in general what to do when the condition is true. 
+   
+   Conditional statements also usually have an else part, which tells the app or program in general what to do when the condition is false.
+
     Conditions Type:
     
      If statement: is used to specify a block of code to be executed, if a specified condition is true.
      If - else statement: is used to specify a new condition to test, if the first condition is false then it will be redirected to the else part.
+     
+     
      Logical conditions: Are features of programming languages "conditional statement", we will list them below:-
+     
          Less than: a < b
          Less than or equal to: a <= b
          Greater than: a > b
