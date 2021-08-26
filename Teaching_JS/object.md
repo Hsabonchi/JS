@@ -18,4 +18,12 @@
     year: 1969
    };
    
+  <h3> How to access an object propert <h3>
+  
+  Object_Name DOT property name
+  myCar.make
+   
+   
+   
+   
 </pre>
