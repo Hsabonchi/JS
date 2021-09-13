@@ -20,3 +20,8 @@ JSON (JavaScript Object Notation)
       Action   Resource      ParameterResult
   </pre>
 
+
+<pre>
+ <p> API End point:  https://jsonmock.hackerrank.com/api/countries/search?name=AF</p>
+
+</pre>
