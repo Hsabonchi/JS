@@ -8,7 +8,10 @@
       following are illegal:
     
        "2"-"1"
-   
+       
+       
+   #### How can I convert a number to a string.
+     ''+123 ===> '123'
 
 
 
