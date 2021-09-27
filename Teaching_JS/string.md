@@ -12,6 +12,8 @@
        
    #### How can I convert a number to a string.
      ''+123 ===> '123'
+   
+   #### Number() method for parsing string values into a number.
 
 
 
