@@ -1,6 +1,8 @@
 <pre>
 
 - String concatination means paste two or more string together
+ *** Note *** 
+`String concatenation. When you append a number to a string it get turned into a string and processing is from left to right.`
 
      "Hello" + "World" the result will be one word  as  ---->   "Hello World"
 
